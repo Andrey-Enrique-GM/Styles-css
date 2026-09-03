@@ -1,0 +1,65 @@
+body{
+    font-family: Arial, sans-serif;
+    /* 40 pixeles */
+    margin: 40px;
+    background-color: #d4d4ff;
+}
+
+h1{
+    color: #bb01be;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    color: #33d546;
+    font-size:x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.characters{
+    padding: 20px;
+    margin: 20px;
+    background-color: #7555c8;
+}
+
+.sasaki{
+    background-color: #e86868;
+    width: 960px;
+    height: 1078px;
+    h2{
+        color: #ce1818;
+    }
+}
+
+.akira{
+    background-color: #8268e8;
+    width: 960px;
+    height: 1078px;
+    h2{
+        color: #2814da;
+    }
+}
+
+.ayame{
+    background-color: #d368e8;
+    width: 960px;
+    height: 1078px;
+    h2{
+        color: #d817dc;
+    }
+}
+
+
+.enlace {
+    font-size:x-large;
+    color: #33d546;
+    font-weight: bold;
+    text-decoration: none; /* Quita el subrayado por defecto */
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+/* Efecto al pasar el cursor sobre el enlace */
+.enlace:hover {
+    color: #25af35;
+    text-underline-offset: 4px;
+}
