@@ -102,12 +102,13 @@ h1 {
     background-color: #fce8e8;
 }
 .sasaki h2 {
+    font-family:'Times New Roman', Times, serif;
     color: #ce1818;
 }
 
 /* Cambia la imagen al pasar el cursor sobre su tarjeta */
 .sasaki:hover .img-sasaki {
-    content: url('../imagenes/sasaki2.png');
+    content: url('/imagenes/sasaki2.png');
 }
 
 /* AKIRA */
@@ -115,11 +116,12 @@ h1 {
     background-color: #e8eafc;
 }
 .akira h2 {
+    font-family:'Times New Roman', Times, serif;
     color: #2814da;
 }
 
 .akira:hover .img-akira {
-    content: url('../imagenes/akira2.png');
+    content: url('/imagenes/akira2.png');
 }
 
 /* AYAME */
@@ -127,9 +129,10 @@ h1 {
     background-color: #fbe8fc;
 }
 .ayame h2 {
+    font-family:'Times New Roman', Times, serif;
     color: #d817dc;
 }
 
 .ayame:hover .img-ayame {
-    content: url('../imagenes/ayame2.png');
+    content: url('/imagenes/ayame2.png');
 }
