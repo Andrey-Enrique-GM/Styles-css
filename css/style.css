@@ -1,65 +1,103 @@
-body{
+body {
     font-family: Arial, sans-serif;
-    /* 40 pixeles */
     margin: 40px;
-    background-color: #d4d4ff;
+    background-color: #f0f0f8;
+    color: #333;
 }
 
-h1{
+h1 {
     color: #bb01be;
-    font-size: 50px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-h2{
-    color: #33d546;
-    font-size:x-large;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 
-.characters{
-    padding: 20px;
-    margin: 20px;
-    background-color: #7555c8;
+.comic-link {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.sasaki{
-    background-color: #e86868;
-    width: 960px;
-    height: 1078px;
-    h2{
-        color: #ce1818;
-    }
+.comic-link h2 {
+    display: inline-block;
+    margin-right: 10px;
+    color: #2baf3a;
 }
 
-.akira{
-    background-color: #8268e8;
-    width: 960px;
-    height: 1078px;
-    h2{
-        color: #2814da;
-    }
-}
-
-.ayame{
-    background-color: #d368e8;
-    width: 960px;
-    height: 1078px;
-    h2{
-        color: #d817dc;
-    }
-}
-
-
+/* Enlace a Webtoon */
 .enlace {
-    font-size:x-large;
+    font-size: x-large;
     color: #33d546;
     font-weight: bold;
-    text-decoration: none; /* Quita el subrayado por defecto */
-    transition: color 0.2s ease, text-decoration 0.2s ease;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-/* Efecto al pasar el cursor sobre el enlace */
 .enlace:hover {
     color: #25af35;
-    text-underline-offset: 4px;
+    text-decoration: underline;
+}
+
+/* Contenedor flexible para alinear las tarjetas */
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #7555c8;
+    border-radius: 12px;
+}
+
+/* Estilo base para todas las tarjetas */
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px; /* Ancho cómodo para tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustar imágenes para que no se desborden */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.card ul {
+    list-style: none; /* Quita los puntos por defecto */
+    padding: 0;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+}
+
+.card li {
+    padding: 4px 0;
+    font-size: 16px;
+}
+
+/* Colores específicos de cada personaje */
+.sasaki {
+    background-color: #fce8e8;
+}
+.sasaki h2 {
+    color: #ce1818;
+}
+
+.akira {
+    background-color: #e8eafc;
+}
+.akira h2 {
+    color: #2814da;
+}
+
+.ayame {
+    background-color: #fbe8fc;
+}
+.ayame h2 {
+    color: #d817dc;
 }
