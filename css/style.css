@@ -23,7 +23,6 @@ h1 {
     color: #2baf3a;
 }
 
-/* Enlace a Webtoon */
 .enlace {
     font-size: x-large;
     color: #33d546;
@@ -37,7 +36,7 @@ h1 {
     text-decoration: underline;
 }
 
-/* Contenedor flexible para alinear las tarjetas */
+/* Contenedor base de personajes */
 .characters {
     display: flex;
     flex-wrap: wrap;
@@ -48,27 +47,39 @@ h1 {
     border-radius: 12px;
 }
 
-/* Estilo base para todas las tarjetas */
+/* Estilos base para cada tarjeta */
 .card {
     border-radius: 10px;
     padding: 20px;
-    width: 280px; /* Ancho cómodo para tarjetas */
+    width: 280px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* Transición para cuando la tarjeta se mueva al pasar el cursor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Ajustar imágenes para que no se desborden */
+/* EFECTO HOVER EN LA TARJETA (BRINQUITO) */
+.card:hover {
+    /* Mueve la tarjeta 5 pixeles hacia arriba al pasar el ratón */
+    transform: translateY(-5px);
+    /* Incrementa la sombra */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Ajustes generales para todas las imágenes */
 .card img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 8px;
     margin-top: 15px;
+    /* Transición al cambiar de imagen */
+    transition: content 0.3s ease;
 }
 
 .card ul {
-    list-style: none; /* Quita los puntos por defecto */
+    list-style: none;
     padding: 0;
     margin: 10px 0;
     width: 100%;
@@ -80,7 +91,13 @@ h1 {
     font-size: 16px;
 }
 
-/* Colores específicos de cada personaje */
+
+
+/* -------------------------------------------------------------
+   COLORES Y CAMBIO DE IMÁGENES AL PASAR EL CURSOR (:hover)
+   ------------------------------------------------------------- */
+
+/* SASAKI */
 .sasaki {
     background-color: #fce8e8;
 }
@@ -88,6 +105,12 @@ h1 {
     color: #ce1818;
 }
 
+/* Cambia la imagen al pasar el cursor sobre su tarjeta */
+.sasaki:hover .img-sasaki {
+    content: url('../imagenes/sasaki2.png');
+}
+
+/* AKIRA */
 .akira {
     background-color: #e8eafc;
 }
@@ -95,9 +118,18 @@ h1 {
     color: #2814da;
 }
 
+.akira:hover .img-akira {
+    content: url('../imagenes/akira2.png');
+}
+
+/* AYAME */
 .ayame {
     background-color: #fbe8fc;
 }
 .ayame h2 {
     color: #d817dc;
+}
+
+.ayame:hover .img-ayame {
+    content: url('../imagenes/ayame2.png');
 }
